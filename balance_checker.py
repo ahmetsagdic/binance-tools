@@ -10,6 +10,9 @@ import time, hmac, urllib.parse, hashlib, requests,json
 # if you want to use it on your binance account.
 #BINANCE_URL='https://api.binance.com'
 BINANCE_URL='https://testnet.binance.vision'
+
+# read json file for api key and secret key.
+# inspect example_key.json for a template.
 f=open('test_key.json','r')
 dump=json.load(f)
 API_KEY=dump['API_KEY']
